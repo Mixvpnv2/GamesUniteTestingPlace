@@ -1,0 +1,38 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Robojini/Tuturial_UI_Library/main/UI_Template_1"))()
+
+local Window = Library.CreateLib("GamesUniteTestingPlace", "RJTheme3")
+
+local Tab = Window:NewTab("SilentAim")
+
+local Section = Tab:NewSection("idk")
+
+Section:NewButton("Silent", "only/7/8/", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Github-Account-39021832/Roblox/main/Games%20Unite%20Testing%20Place/Silent%20Aim.lua"))()
+end)
+
+Section:NewButton("Esp/Bad", "Bad", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/LordNahida/GUnite/main/ESP.lua"))();
+end)
+
+Section:NewKeybind("Sound", "KeybindSound", Enum.KeyCode.F, function()
+local SoundService = game:GetService("SoundService")
+
+-- Example: Set the ambient volume
+SoundService.AmbientReverb = Enum.ReverbType.Cave
+
+-- Example: Play a sound globally
+local sound = Instance.new("Sound")
+sound.SoundId = "rbxassetid://8679627751" -- Replace with a valid sound asset ID
+sound.Volume = 0.2
+sound.Looped = false
+sound.Parent = SoundService
+sound:Play()
+end)
+
+local Tab = Window:NewTab("?????")
+
+local Section = Tab:NewSection("?????")
+
+Section:NewButton("???", "???", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Mixvpnv2/WTF/refs/heads/main/Server.lua'))()
+end)
